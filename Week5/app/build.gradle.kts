@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.mobdev.week5"
-    compileSdk = 33
+    namespace = "com.mobdev.homework.week5"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.mobdev.week5"
-        minSdk = 24
-        targetSdk = 33
+        applicationId = "com.mobdev.homework.week5"
+        minSdk = 34
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -19,7 +19,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -36,5 +39,4 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation("androidx.viewpager2:viewpager2:1.0.0")
 }
